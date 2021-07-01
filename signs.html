@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ehab Elteknik | Borås</title>
+    <title>Ehab Elteknik | Graverade Skyltar</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/5607192665.js" crossorigin="anonymous"></script>
 </head>
@@ -24,37 +24,38 @@
             </a>
         </header>
 
-        <div class="landing-content">
-            <div class="textBox">
-                <h2>På Ehab <span>gör</span> vi</h2>
-                <p>Elkonstruktion, eldokumentation, automatikskåp, graverade skyltar, automationsapplikationer</p>
-                <a href="contact.html">Kontakt</a>
-            </div>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="img/gravskylt.jpg" style="width:100%">
         </div>
-        <div class="landing-content-right">
-            <div class="textBox">
-                <h2>På Ehab <span>Kan</span> vi</h2>
-                <p>Industriautomation, felsökning, åtgärda fel, programmera styrsystem, frekvensomformare, motorer och motorstyrningar...</p>
-                <a href="services.html">Tjänster</a>
-            </div>
+    
+        <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="img/gravskylt2.jpg" style="width:100%">
         </div>
-        <div class="landing-content">
-            <div class="textBox">
-                <h2>Helt ärligt<br>vi är <span>kluriga</span></h2>
-                <p>EHAB Elteknik AB utvecklar och producerar elektronikkomponenter till projekt inom automation för flertalet industrier i hela världen, bl.a. shipment, bil- och processindustrin. Vi erbjuder även högkvalitativ teknisk support till våra kunder.</p>
-                <a href="history.html">Kvalitetsmanual</a>
-            </div>
+    
+        <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="img/gravskylt.jpg" style="width:100%">
         </div>
-        <!-- <div class="landing-content-right">
-            <div class="textBox">
-                <h2>Helt ärligt<br>Vi är <span>kluriga</span></h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum nobis expedita dolor amet provident quam doloribus, voluptatem corrupti alias mollitia quo, inventore recusandae voluptates libero beatae at esse aut sunt.</p>
-                <a href="services.html">Våra Tjänster</a>
-            </div>
-        </div> -->
-        <div class="map-content">
-            <a href="https://www.google.com/maps/dir//K%C3%A4llb%C3%A4cksrydsgatan+8,+507+42+Bor%C3%A5s/@57.7247332,12.9918902,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x465aa08cf966c007:0x87cbbc11bb8e65ac!2m2!1d12.9940789!2d57.7247332"><img class="map" src="img/ehabkarta.png" alt="ehab karta"></a>
-        </div>
+    
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+       
         <div class="border"></div>
         <div class="address-footer">
             <div class="address-container">
@@ -75,6 +76,6 @@
                 </div>
             </div>
         </div>
-        <script src="myScript.js"></script>
+        <script src="app.js"></script>
 </body>
 </html>
