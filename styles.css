@@ -9,7 +9,7 @@
 body{
     line-height: 1.5;
     font-family: 'Roboto Mono', monospace;
-    background-image: linear-gradient(to bottom, #2A9D8F, #E76F51);
+    background-image: linear-gradient(to bottom right, #667761, #EDEBA0);
     background-size: cover;
 }
 
@@ -19,7 +19,7 @@ ul{
 }
 
 li, a, button {
-    font-weight: 500;
+    font-weight: 800;
     font-size: 20px;
     color: black;
     text-decoration: none;
@@ -31,7 +31,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
-    background-color: #2A9D8F;
+    /* background-color: #667761; */
     /* background-image: linear-gradient(to bottom left, #2A9D8F, #E76F51); */
 }
 
@@ -60,6 +60,7 @@ header {
 
 button {
     padding: 9px 25px;
+    font-size: 2vh;
     font-family: 'Roboto Mono', monospace;
     background-color: rgba(255,255,255,0.2);
     cursor: pointer;
@@ -70,7 +71,7 @@ button {
 }
 
 button:hover{
-    background-image: linear-gradient(to top left, #2A9D8F, #E76F51);
+    background-image: linear-gradient(to top left, #667761, #EDEBA0);
 }
 
 /***** HEADER END ******/
@@ -84,7 +85,7 @@ button:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 100vh;
+    min-height: 20vh;
     padding:100px;
 }
 
@@ -94,63 +95,107 @@ button:hover{
 }
 
 .landing-content .textBox h2{
-    color:#264653;
+    color:#000;
     font-size: 4em;
     line-height: 1.4em;
     font-weight: 500;
 }
 
 .landing-content .textBox h2 span{
-    color:#E9C46A;
+    color:#A15E49;
     font-size: 1.2em;
     font-weight: 900;
     text-transform: uppercase;
 }
 
 .landing-content .textBox p{
-    color: #264653;
+    color: #000;
+    font-size: 20px;
+    font-weight: 900;
 }
 
 .landing-content .textBox a{
     display: inline-block;
     margin-top: 20px;
     padding: 8px 20px;
-    background: #E76F51;
-    color:#fff;
+    background-color: rgba(255,255,255,0.2);
+    color:#000;
     border-radius: 40px;
     font-weight: 500;
     letter-spacing: 1px;
     text-decoration: none;
-    transition: all 0.3s ease 0s;
 
 }
 .landing-content .textBox a:hover{
-    background-image: linear-gradient(to top left, #2A9D8F, #E76F51);
+    background-image: linear-gradient(to top left, #667761, #EDEBA0);
 }
 
-.landing-content .imgBox{
-    width: 600px;
+.landing-content-right{
+    position: relative;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
-    padding-right: 50px;
-    margin-top: 50px;
+    align-items: flex-end;
+    min-height: 20vh;
+    padding:100px;
 }
 
-.landing-content .imgBox img{
-    max-width: 340px;
+.landing-content-right .textBox{
+    position: relative;
+    max-width: 600px;
 }
 
-.circle {
-    position: absolute;
-    top: 0;
-    left: 0;
+.landing-content-right .textBox h2{
+    color:#000;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.landing-content-right .textBox h2 span{
+    color:#EDEBA0;
+    font-size: 1.2em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.landing-content-right .textBox p{
+    color: #000;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.landing-content-right .textBox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background-color: rgba(255,255,255,0.2);
+    color:#000;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+}
+.landing-content-right .textBox a:hover{
+    background-image: linear-gradient(to top left, #667761, #EDEBA0);
+}
+
+.map-content{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+    margin-top: 150px;
+}
+.map{
+    border-radius: 50%;
+    border: 2px solid #667761;
     width: 100%;
-    height: 100%;
-    background: #E76F51;
-    clip-path: circle(600px at right 800px);
+    max-width: 400px;
+    height: auto;
 }
 
-/***** INDEX START *****/
+/***** INDEX END *****/
 
 /***** TJÄNSTER START ******/
 .services-section{
@@ -173,16 +218,16 @@ button:hover{
 }
 
 .border{
-    width: 160px;
+    width: 100%;
     height: 2px;
-    background: #E9C46A;
+    background: #EDEBA0;
     margin: 20px auto;
 }
 
 .services-container{
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-between;
+    justify-content: space-around;
     /* justify-content: center; */
 }
 
@@ -197,7 +242,7 @@ button:hover{
     display: inline-block;
     width: 70px;
     height: 70px;
-    border: 3px solid #E9C46A;
+    border: 3px solid #EDEBA0;
     transform: rotate(45deg);
     margin-bottom: 30px;
     margin-top: 16px;
@@ -210,7 +255,7 @@ button:hover{
 }
 
 .service-box:hover .service-icon{
-    background: #E9C46A;
+    background: #EDEBA0;
     color:ddd;
 }
 
@@ -219,11 +264,12 @@ button:hover{
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
-.service-desc{
+/* .service-desc{
     font-size: 18px;
-}
+} */
 
 /***** TJÄNSTER END ******/
 
@@ -252,11 +298,12 @@ button:hover{
     left: 0;
     right: 0;
     border-radius: 50%;
-    background-color: #E9C46A;
+    background-color: #EDEBA0;
     overflow: hidden;
     width: 0;
     height: 100%;
     transition: .5s ease;
+    opacity:0.8;
 }
   
 .emp-container:hover .overlay {
@@ -264,7 +311,7 @@ button:hover{
 }
   
 .emp-text {
-    color: #2A9D8F;
+    color: #A15E49;
     font-size: 30px;
     position: absolute;
     top: 50%;
@@ -294,7 +341,7 @@ button:hover{
 /***** STADGAR START*****/
 
 .faq-box{
-    width: 950px;
+    width: 920px;
     margin: 100px auto;
     background: #fff;
     border-radius: 7px;
@@ -302,14 +349,11 @@ button:hover{
 }
 
 .faq-box, .faq-heading{
-    background: #E9C46A;
+    background: #EDEBA0;
     border-radius: 7px 7px 0px 0px;
     padding: 10px;
-    color: #2A9D8F;
+    color: #000000;
     text-align: center;
-}
-
-.faq-box, .faq-heading p{
     font-size: 40px;
 }
 
@@ -322,16 +366,14 @@ button:hover{
     margin-top: 3px;
 }
 
-.faq-box summary{
-    font-size: 20px;
-}
+.faq-box 
 
 details{
-    background: #f6f6f6;
+    background: #EDEBA0;
     padding: 10px 20px;
     border-radius: 7px;
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 1px;
     cursor: pointer;
 }
@@ -340,6 +382,9 @@ details summary{
     outline:none;
 }
 
+.faq-author{
+    text-align: center;
+}
 /***** STADGAR END*****/
 
 /***** FOOTER START*****/
@@ -369,10 +414,10 @@ ul{
 
 .address-col ul li a{
     font-size: 16px;
+    font-weight: 700;
     text-transform: capitalize;
     color:rgb(8, 8, 0);
     text-decoration: none;
-    font-weight: 300;
     color:#000000;
     display: block;
     transition: all 0.3s ease;
@@ -385,28 +430,56 @@ ul{
 
 /***** FOOTER END*****/
 
+@media screen and (max-width:1070px) {
+    .header a{
+        display: block;
+        text-align: left;
+        /* float: right; */
+    }
+
+    .faq-box{
+        width: 500px;
+    }
+    .address-row{
+        display: block;
+    }
+    .footer {
+        max-width: 80%;
+    }
+}
+
 @media screen and (max-width:960px) {
     .service-box{
         max-width: 45%;
     }
+    /* .footer{
+        max-width: 80%;
+    }  */
+    
 }
 
 @media screen and (max-width:768px) {
     .service-box{
         max-width: 50%;
     }
-    .nav_links {
-        width: 50%;
+    /* .nav_links {
+        width: 100%;
         margin-bottom: 30px;
-    }
-    .address-col {
-        width: 50%;
-        margin-bottom: 30px;
-    }
+    } */
+    /* .footer{
+        max-width: 50%;
+    } */
+
 }
 
-@media(max-width: 574px){
-    .address-col {
+@media screen and (max-width:550px) {
+    body{
+        background-size: 100vh;
+    }
+    .map-content {
+        max-width: 20vh;
+    }
+    .faq-box {
         width: 100%;
     }
 }
@@ -415,9 +488,10 @@ ul{
     .service-box{
         max-width: 100%;
     }
-    .nav_links {
-        width: 100%;
-    }
+
+    /* .footer{
+        max-width: 100%;
+    } */
 }
 
 @media only screen and (max-device-width: 1366px) {
@@ -425,7 +499,4 @@ ul{
       background-attachment: scroll;
     }
   }
-
-
-
 
